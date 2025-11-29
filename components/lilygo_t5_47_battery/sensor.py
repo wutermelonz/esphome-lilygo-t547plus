@@ -19,7 +19,7 @@ CONFIG_SCHEMA = cv.Schema(
         cv.GenerateID(): cv.declare_id(Lilygot547battery),
         cv.Optional(CONF_VOLTAGE): sensor.sensor_schema(
             unit_of_measurement=UNIT_VOLT,
-            accuracy_decimals=2,
+            accuracy_decimals=4,
             device_class=DEVICE_CLASS_VOLTAGE,
         ),
     }
